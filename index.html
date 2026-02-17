@@ -43,21 +43,23 @@
 </head>
 <body>
 
-    <model-viewer 
-        src="Jturn.glb" 
-        ios-src="Jturn.usdz"
-        ar 
-        ar-modes="quick-look webxr scene-viewer" 
-        camera-controls 
-        shadow-intensity="1">
-        
-        <button slot="ar-button" id="ar-button">
-            👋 VIEW IN AR
-        </button>
-
-    </model-viewer>
-
+   <model-viewer 
+    src="Jturn.glb" 
+    ios-src="Jturn.usdz"
+    ar 
+    ar-modes="webxr scene-viewer quick-look" 
+    camera-controls 
+    touch-action="pan-y"
+    shadow-intensity="1"
+    ar-placement="floor"
+    alt="A 3D model of a J-turn">
+    
+    <button slot="ar-button" id="ar-button">
+        👋 VIEW IN AR
+    </button>
+</model-viewer>
 </body>
 </html>
+
 
 
